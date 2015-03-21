@@ -35,3 +35,4 @@ venv
 .pydevproject
 ProcessWrapper/dist
 ProcessWrapper/Process_Wrapper.egg-info
+*.coverage

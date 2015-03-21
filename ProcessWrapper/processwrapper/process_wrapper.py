@@ -40,9 +40,8 @@ def run_process(command):
     yield
     _kill_process_tree(process.pid)
     
-def _kill_process_tree(pid, including_parent=True):    
+def _kill_process_tree(pid):    
     parent = process_utility.Process(pid)
     for child in parent.children(recursive=True):
         child.kill()
-    if including_parent:
-        parent.kill()
+    parent.kill()
