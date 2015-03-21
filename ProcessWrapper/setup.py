@@ -8,7 +8,7 @@ from setuptools import setup
 
 setup(
     name = 'process-wrapper',
-    version = '0.1.1',
+    version = '0.1.2',
     author = 'Marc Lopez',
     author_email = 'marc.rainier.lopez@gmail.com',
     packages = ['processwrapper', 'processwrapper.test'],
@@ -21,5 +21,6 @@ setup(
         'psutil>=2.2.1'],
     extras_require = {
         'tests': [
+           'coverage>=3.7.1',
            'mock>=1.0.1',
            'nose>=1.3.4']})
