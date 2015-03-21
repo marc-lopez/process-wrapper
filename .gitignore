@@ -33,3 +33,5 @@ __pycache__
 venv
 .project
 .pydevproject
+ProcessWrapper/dist
+ProcessWrapper/Process_Wrapper.egg-info
