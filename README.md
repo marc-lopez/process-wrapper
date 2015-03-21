@@ -1,6 +1,9 @@
 ===============
 Process Wrapper
 ===============
+
+.. image:: https://travis-ci.org/marc-lopez/process-wrapper.svg?branch=master
+
 Process Wrapper is a simple module that executes a command-line style
 program via a context manager. This is useful if you want your script
 to do something that relies on a background process.
@@ -11,7 +14,7 @@ usage would look like this::
 
     #!/usr/bin/env python
 
-	import robot
+    import robot
     from process_wrapper import run_process
 
     with run_process('python manage.py runserver'):
@@ -38,5 +41,5 @@ For running tests
 
 Thanks to
 =========
-`jung rhew <http://stackoverflow.com/users/821632/jung-rhew>` for providing 
-the `basis of process teardown code that I used<http://stackoverflow.com/a/27034438>`
+`jung rhew <http://stackoverflow.com/users/821632/jung-rhew>`_ for providing 
+the `basis of process teardown code that I used <http://stackoverflow.com/a/27034438>`_
