@@ -2,7 +2,7 @@
 Process Wrapper
 ===============
 
-.. image:: https://travis-ci.org/marc-lopez/process-wrapper.svg?branch=master
+[![Build Status](https://travis-ci.org/marc-lopez/process-wrapper.svg?branch=master)](https://travis-ci.org/marc-lopez/process-wrapper)
 
 Process Wrapper is a simple module that executes a command-line style
 program via a context manager. This is useful if you want your script
