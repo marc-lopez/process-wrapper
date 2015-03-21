@@ -36,3 +36,4 @@ venv
 ProcessWrapper/dist
 ProcessWrapper/Process_Wrapper.egg-info
 *.coverage
+*.xml
