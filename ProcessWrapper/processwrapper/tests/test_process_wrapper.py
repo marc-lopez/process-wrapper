@@ -53,7 +53,7 @@ def test__sample_usage__works():
     from processwrapper import run_process
 
     with run_process(
-            'python bin/sample_background_process.py 1') as process:
+            'python bin/sample_background_process.py') as process:
         sample_process = Process(process.pid)
         assert sample_process.is_running()
         time.sleep(2)

@@ -3,7 +3,7 @@ Process Wrapper
 ===============
 
 [![Build Status](https://travis-ci.org/marc-lopez/process-wrapper.svg?branch=master)](https://travis-ci.org/marc-lopez/process-wrapper)
-elies on a background process.
+[![Coverage Status](https://coveralls.io/repos/marc-lopez/process-wrapper/badge.svg?branch=master)](https://coveralls.io/r/marc-lopez/process-wrapper?branch=master)
 
 Process Wrapper is a simple module that executes a command-line style
 program via a context manager. This is useful if you want your script
