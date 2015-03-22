@@ -1,3 +1,5 @@
 [run]
 branch = True
-omit = processwrapper/tests/*
+omit =
+	processwrapper/tests/*
+	processwrapper/interfaces/*interface*

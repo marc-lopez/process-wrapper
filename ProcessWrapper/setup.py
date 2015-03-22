@@ -36,7 +36,7 @@ setup(
     url='http://pypi.python.org/pypi/process-wrapper/',
     license='LICENSE.txt',
     description='Context manager for background command-line programs',
-    long_description=open('README.txt').read(),
+    #long_description=open('README.txt').read(),
     install_requires=[
         'psutil>=2.2.1'],
     tests_require=[

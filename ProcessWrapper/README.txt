@@ -34,11 +34,20 @@ Dependencies
 ============
 psutil
 
-For running tests
------------------
-1. nose (for running tests conveniently, not essential)
+Tested Capabilities
+===================
+- Kills parent and child processes on exit
+- Handles in-context exceptions: It still kills the called process and
+its children
+- The context manager will do nothing if the parent process is killed
+before exiting
 
-2. mock
+Test Command
+=============
+Includes line and branch coverage::
+
+    py.test processwrapper/tests --cov processwrapper --cov-report term-missing --pep8
+
 
 Thanks to
 =========
