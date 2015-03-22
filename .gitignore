@@ -33,6 +33,7 @@ __pycache__
 venv
 .project
 .pydevproject
+ProcessWrapper/.cache
 ProcessWrapper/dist
 ProcessWrapper/Process_Wrapper.egg-info
 *.coverage
