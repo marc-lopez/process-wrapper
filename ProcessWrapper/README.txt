@@ -4,6 +4,9 @@ Process Wrapper
 
 .. image:: https://travis-ci.org/marc-lopez/process-wrapper.svg?branch=master
     :target: https://travis-ci.org/marc-lopez/process-wrapper
+    
+.. image:: https://coveralls.io/repos/marc-lopez/process-wrapper/badge.svg?branch=master
+  :target: https://coveralls.io/r/marc-lopez/process-wrapper?branch=master
 
 Process Wrapper is a simple module that executes a command-line style
 program via a context manager. This is useful if you want your script
@@ -37,17 +40,14 @@ psutil
 Tested Capabilities
 ===================
 - Kills parent and child processes on exit
-- Handles in-context exceptions: It still kills the called process and
-its children
-- The context manager will do nothing if the parent process is killed
-before exiting
+- Handles in-context exceptions: It still kills the called process and its children
+- The context manager will do nothing if the parent process is killed before exiting
 
 Test Command
 =============
 Includes line and branch coverage::
 
     py.test processwrapper/tests --cov processwrapper --cov-report term-missing --pep8
-
 
 Thanks to
 =========

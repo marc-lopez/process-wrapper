@@ -5,5 +5,5 @@ install:
   - pip install -r requirements.txt
   - pip install coveralls
 before_script: cd ProcessWrapper
-script: python setup.py test --pytest-args="processwrapper --cov processwrapper --pep8 --cov-report term-missing"
+script: python setup.py test --pytest-args="processwrapper/tests --cov processwrapper --pep8 --cov-report term-missing"
 after_success: coveralls
