@@ -1,5 +1,5 @@
 from .process_wrapper import ProcessWrapper
-from processwrapper.interfaces.process_utility import DefaultProcessUtility
+from .interfaces.process_utility import DefaultProcessUtility
 
 from contextlib import contextmanager
 
@@ -24,7 +24,6 @@ def run_process(command):
     -------------------
     - Kills parent and child processes on exit
     - Handles in-context exceptions: It still kills the called process and its children
-    - Processes are properly cleaned up when in-context exceptions occur
     - Process wrapper will do nothing if it encounters a Process Not Found exception for the parent process and raise all others
     - Tested to work in win32 and linux2 platforms
 

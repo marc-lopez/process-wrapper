@@ -2,10 +2,10 @@
 Process Wrapper
 ===============
 
-.. image:: https://travis-ci.org/marc-lopez/process-wrapper.svg?branch=master
+.. image:: https://travis-ci.org/marc-lopez/process-wrapper.svg?branch=v0.2.x
     :target: https://travis-ci.org/marc-lopez/process-wrapper
     
-.. image:: https://coveralls.io/repos/marc-lopez/process-wrapper/badge.svg?branch=master
+.. image:: https://coveralls.io/repos/marc-lopez/process-wrapper/badge.svg?branch=v0.2.x
   :target: https://coveralls.io/r/marc-lopez/process-wrapper?branch=master
 
 Process Wrapper is a simple module that executes a command-line style
@@ -47,7 +47,7 @@ Tested Capabilities
 
 Test Command
 =============
-Command used to test the module::
+Command used to test the module. Includes line and branch coverage::
 
     py.test processwrapper/tests --cov processwrapper --cov-report term-missing --pep8
 

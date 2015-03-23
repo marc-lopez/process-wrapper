@@ -2,8 +2,8 @@
 Process Wrapper
 ===============
 
-[![Build Status](https://travis-ci.org/marc-lopez/process-wrapper.svg?branch=master)](https://travis-ci.org/marc-lopez/process-wrapper)
-[![Coverage Status](https://coveralls.io/repos/marc-lopez/process-wrapper/badge.svg?branch=master)](https://coveralls.io/r/marc-lopez/process-wrapper?branch=master)
+[![Build Status](https://travis-ci.org/marc-lopez/process-wrapper.svg?branch=v0.2.x)](https://travis-ci.org/marc-lopez/process-wrapper)
+[![Coverage Status](https://coveralls.io/repos/marc-lopez/process-wrapper/badge.svg?branch=v0.2.x)](https://coveralls.io/r/marc-lopez/process-wrapper?branch=master)
 
 Process Wrapper is a simple module that executes a command-line style
 program via a context manager. This is useful if you want your script
@@ -26,7 +26,7 @@ or equivalent signal on context exit. Caution is advised.
 
 To install
 ==========
-Run in command line::
+Run in command line:
 
     pip install process-wrapper
 
@@ -38,13 +38,12 @@ Tested Capabilities
 ===================
 - Kills parent and child processes on exit
 - Handles in-context exceptions: It still kills the called process and its children
-- Processes are properly cleaned up when in-context exceptions occur
 - Process wrapper will do nothing if it encounters a Process Not Found exception for the parent process and raise all others
 - Tested to work in win32 and linux2 platforms
 
 Test Command Used
 =================
-Includes line and branch coverage::
+Includes line and branch coverage. . Includes line and branch coverage:
 
     py.test processwrapper/tests --cov processwrapper --cov-report term-missing --pep8
 
