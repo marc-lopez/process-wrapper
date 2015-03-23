@@ -22,7 +22,7 @@ class ProcessWrapper(object):
         finally:
             try:
                 self.kill_process_group(process.pid)
-            except self.process_utility.ProcessDoesNotExist as e:
+            except self.process_utility.ProcessDoesNotExist:
                 pass
             except:
                 raise

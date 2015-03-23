@@ -4,7 +4,7 @@ Created on Mar 20, 2015
 @author: Marc Lopez (marc.rainier.lopez@gmail.com)
 '''
 
-from pytest import raises
+from pytest import raises  # @UnresolvedImport
 from mock import ANY
 
 from .mocks import ProcessUtilityMock
@@ -18,6 +18,7 @@ class TestProcessWrapper(object):
         self.process_wrapper = ProcessWrapper(ProcessUtilityMock())
         self.process_utility = self.process_wrapper.process_utility
         self.sample_command = 'background_process run'
+        self.SampleException = BaseException
 
     def teardown_method(self, method):
         self.process_utility.kill_process_group_mock.assert_any_call(ANY)
@@ -28,14 +29,11 @@ class TestProcessWrapper(object):
                 self.sample_command)
 
     def test__process_wrapper__handles_in_context_exceptions(self):
-        SampleException = BaseException
-        with raises(SampleException):
+        with raises(self.SampleException):
             with self.process_wrapper.run_process(self.sample_command):
-                raise SampleException
+                raise self.SampleException
 
     def test__process_wrapper__does_nothing_with_already_killed_procs(self):
-
-        sample_pid = 1
         self.process_utility.kill_process_group_mock.side_effect = \
             self.process_utility.ProcessDoesNotExist
 
@@ -47,12 +45,10 @@ class TestProcessWrapper(object):
             raise AssertionError(fail_msg)
 
     def test__process_wrapper__raises_all_other_exceptions(self):
-        sample_pid = 1
-        SampleException = BaseException
         self.process_utility.kill_process_group_mock.side_effect = \
-            SampleException
+            self.SampleException
 
-        with raises(SampleException):
+        with raises(self.SampleException):
             with self.process_wrapper.run_process(self.sample_command):
                 pass
 
