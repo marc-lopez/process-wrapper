@@ -6,3 +6,4 @@ v0.2.0, 22 Mar 2015
 	-- Handles in-context exceptions: It still kills the called process and its children
 	-- Process wrapper will do nothing if it encounters a Process Not Found exception and raise all others
 	-- Tested to work in win32 and linux2 platforms
+v0.2.1, 22 Mar 2015 -- Hotfix. Resolves 'No module named interfaces.process_utility'
