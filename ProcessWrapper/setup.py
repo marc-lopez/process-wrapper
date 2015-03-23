@@ -28,17 +28,30 @@ class PyTest(TestCommand):
 
 setup(
     name='process-wrapper',
-    version='0.1.2',
+    version='0.2.0',
     author='Marc Lopez',
     author_email='marc.rainier.lopez@gmail.com',
     packages=['processwrapper'],
     scripts=[],
-    url='http://pypi.python.org/pypi/process-wrapper/',
+    url='https://github.com/marc-lopez/process-wrapper',
+    platforms=['linux2','win32'],
     license='LICENSE.txt',
     description='Context manager for background command-line programs',
     long_description=open('README.txt').read(),
+    classifiers=[
+          'Development Status :: 3 - Alpha',
+          'Environment :: Console',
+          'Intended Audience :: Developers',
+          'Intended Audience :: System Administrators',
+          'License :: OSI Approved :: MIT License',
+          'Programming Language :: Python',
+          'Topic :: Software Development :: Libraries :: Python Modules',
+        ],
     install_requires=[
-        'psutil>=2.2.1'],
+        'psutil>=2.2.1'
+        ],
     tests_require=[
-        'pytest'],
-    cmdclass={'test': PyTest},)
+        'pytest',
+        ],
+    cmdclass={'test': PyTest},
+    )

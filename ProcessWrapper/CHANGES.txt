@@ -1,3 +1,8 @@
 v0.1.0, 20 Mar 2015 -- Initial release.
 v0.1.1, 20 Mar 2015 -- Fixed the way the module is imported.
 v0.1.2, 20 Mar 2015 -- Cleaned-up test cases. Tests now includes coverage
+v0.2.0, 22 Mar 2015
+	-- Changed test framework to pytest
+	-- Handles in-context exceptions: It still kills the called process and its children
+	-- Process wrapper will do nothing if it encounters a Process Not Found exception and raise all others
+	-- Tested to work in win32 and linux2 platforms

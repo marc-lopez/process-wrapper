@@ -37,10 +37,10 @@ psutil
 Tested Capabilities
 ===================
 - Kills parent and child processes on exit
-- Handles in-context exceptions: It still kills the called process and
-its children
-- The context manager will do nothing if the parent process is killed
-before exiting
+- Handles in-context exceptions: It still kills the called process and its children
+- Processes are properly cleaned up when in-context exceptions occur
+- Process wrapper will do nothing if it encounters a Process Not Found exception for the parent process and raise all others
+- Tested to work in win32 and linux2 platforms
 
 Test Command Used
 =================

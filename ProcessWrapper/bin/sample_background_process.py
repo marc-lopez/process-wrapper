@@ -19,7 +19,7 @@ if __name__ == '__main__':
     import time
     time.sleep(1)
     child = Process(target=subprocess.Popen, args=(
-        'python {}'.format(this_script_location),))
+        'python {} child'.format(this_script_location),))
     child.start()
     
 poll()

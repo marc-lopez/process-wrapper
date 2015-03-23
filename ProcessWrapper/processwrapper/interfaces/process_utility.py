@@ -13,7 +13,8 @@ from process_utility_interface import ProcessUtilityInterface
 
 class DefaultProcessUtility(ProcessUtilityInterface):
     
-    ProcessDoesNotExist = NoSuchProcess
+    def __init__(self):
+        self.ProcessDoesNotExist = NoSuchProcess
 
     def request_new_process(self, command):
         return subprocess.Popen(
@@ -27,3 +28,4 @@ class DefaultProcessUtility(ProcessUtilityInterface):
         for child in parent.children(recursive=True):
             child.kill()
         parent.kill()
+        parent.wait()
