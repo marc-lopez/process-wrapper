@@ -28,10 +28,13 @@ class PyTest(TestCommand):
 
 setup(
     name='process-wrapper',
-    version='0.2.1',
+    version='0.2.2',
     author='Marc Lopez',
     author_email='marc.rainier.lopez@gmail.com',
-    packages=['processwrapper'],
+    packages=[
+        'processwrapper',
+        'processwrapper.interfaces',
+        ],
     scripts=[],
     url='https://github.com/marc-lopez/process-wrapper',
     platforms=['linux2','win32'],
