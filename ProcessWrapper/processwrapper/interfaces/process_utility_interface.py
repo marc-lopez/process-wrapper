@@ -5,9 +5,9 @@ Created on Mar 21, 2015
 '''
 
 from abc import ABCMeta, abstractmethod
+from future.utils import with_metaclass
 
-
-class ProcessUtilityInterface(metaclass=ABCMeta):
+class ProcessUtilityInterface(with_metaclass(ABCMeta)):
     
     ProcessDoesNotExist = BaseException
 
