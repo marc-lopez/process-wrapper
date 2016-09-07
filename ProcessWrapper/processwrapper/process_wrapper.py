@@ -7,7 +7,7 @@ Created on Mar 20, 2015
 from contextlib import contextmanager
 
 
-class ProcessWrapper(object):
+class ProcessWrapper:
     
     def __init__(self, process_utility):
         self.process_utility = process_utility

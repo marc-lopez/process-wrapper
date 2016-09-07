@@ -5,11 +5,9 @@ Created on Mar 21, 2015
 '''
 
 from abc import ABCMeta, abstractmethod
-from _pyio import __metaclass__
 
 
-class ProcessUtilityInterface:
-    __metaclass__ = ABCMeta
+class ProcessUtilityInterface(metaclass=ABCMeta):
     
     ProcessDoesNotExist = BaseException
 
