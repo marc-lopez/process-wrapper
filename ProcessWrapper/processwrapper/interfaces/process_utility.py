@@ -8,7 +8,7 @@ import subprocess
 
 from psutil import NoSuchProcess
 
-from process_utility_interface import ProcessUtilityInterface
+from .process_utility_interface import ProcessUtilityInterface
 
 
 class DefaultProcessUtility(ProcessUtilityInterface):

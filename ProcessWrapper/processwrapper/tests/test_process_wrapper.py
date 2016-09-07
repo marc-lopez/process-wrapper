@@ -12,7 +12,7 @@ from .mocks import ProcessUtilityMock
 from processwrapper import ProcessWrapper
 
 
-class TestProcessWrapper(object):
+class TestProcessWrapper:
 
     def setup_method(self, method):
         self.process_wrapper = ProcessWrapper(ProcessUtilityMock())
