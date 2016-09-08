@@ -28,7 +28,7 @@ class PyTest(TestCommand):
 
 setup(
     name='process-wrapper',
-    version='0.2.2',
+    version='0.3.0',
     author='Marc Lopez',
     author_email='marc.rainier.lopez@gmail.com',
     packages=[

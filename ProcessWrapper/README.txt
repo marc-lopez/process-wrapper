@@ -2,10 +2,10 @@
 Process Wrapper
 ===============
 
-.. image:: https://travis-ci.org/marc-lopez/process-wrapper.svg?branch=v0.2.x
+.. image:: https://travis-ci.org/marc-lopez/process-wrapper.svg?branch=v0.3.x
     :target: https://travis-ci.org/marc-lopez/process-wrapper
     
-.. image:: https://coveralls.io/repos/marc-lopez/process-wrapper/badge.svg?branch=v0.2.x
+.. image:: https://coveralls.io/repos/marc-lopez/process-wrapper/badge.svg?branch=v0.3.x
   :target: https://coveralls.io/r/marc-lopez/process-wrapper?branch=master
 
 Process Wrapper is a simple module that executes a command-line style

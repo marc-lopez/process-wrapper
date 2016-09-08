@@ -8,3 +8,4 @@ v0.2.0, 22 Mar 2015
 	-- Tested to work in win32 and linux2 platforms
 v0.2.1, 22 Mar 2015 -- Hotfix. Resolves 'No module named interfaces.process_utility'
 v0.2.2, 22 Mar 2015 -- setup.py install now properly copies interface
+v0.3.0, 07 Sep 2016 -- Added Python 3 compatibility 
