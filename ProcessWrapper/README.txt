@@ -19,7 +19,7 @@ usage would look like this::
     #!/usr/bin/env python
 
     import robot
-    from process_wrapper import run_process
+    from processwrapper import run_process
 
     with run_process('python manage.py runserver'):
         robot.run('blackbox_test.robot')
